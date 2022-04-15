@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://kenvector_future.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.372549, 0.12549, 0.666667, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.85098, 0.803922, 0.160784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Button" type="Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -882.0
+margin_bottom = -552.0
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+custom_styles/focus = SubResource( 1 )
+custom_styles/disabled = SubResource( 1 )
+custom_styles/normal = SubResource( 1 )
