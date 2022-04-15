@@ -42,6 +42,8 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 84.0
 margin_bottom = 18.0
+focus_neighbour_top = NodePath("../Button2")
+focus_neighbour_bottom = NodePath("../Button2")
 text = "Restart"
 
 [node name="Button2" parent="VBoxContainer" instance=ExtResource( 2 )]
@@ -50,6 +52,8 @@ anchor_bottom = 0.0
 margin_top = 22.0
 margin_right = 84.0
 margin_bottom = 40.0
+focus_neighbour_top = NodePath("../Button")
+focus_neighbour_bottom = NodePath("../Button")
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]

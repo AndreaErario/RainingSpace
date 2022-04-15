@@ -2,7 +2,8 @@ extends Control
 
 
 func _ready():
-	pass
+	# Getting keyboard focus on startup
+	$VBoxContainer/Button.grab_focus()
 
 
 func _on_Button_pressed():
