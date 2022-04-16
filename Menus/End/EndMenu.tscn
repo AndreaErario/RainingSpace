@@ -1,12 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menus/End/EndMenu.gd" type="Script" id=1]
 [ext_resource path="res://Menus/Button.tscn" type="PackedScene" id=2]
-[ext_resource path="res://kenvector_future.ttf" type="DynamicFontData" id=3]
-
-[sub_resource type="DynamicFont" id=1]
-size = 32
-font_data = ExtResource( 3 )
+[ext_resource path="res://Menus/Menu.tres" type="Theme" id=3]
 
 [node name="EndMenu" type="Control"]
 anchor_right = 1.0
@@ -23,7 +19,7 @@ margin_left = -125.5
 margin_top = -80.0
 margin_right = 125.5
 margin_bottom = -44.0
-custom_fonts/font = SubResource( 1 )
+theme = ExtResource( 3 )
 text = "You Lost"
 align = 1
 
@@ -44,6 +40,7 @@ margin_right = 84.0
 margin_bottom = 18.0
 focus_neighbour_top = NodePath("../Button2")
 focus_neighbour_bottom = NodePath("../Button2")
+mouse_default_cursor_shape = 2
 text = "Restart"
 
 [node name="Button2" parent="VBoxContainer" instance=ExtResource( 2 )]
@@ -54,6 +51,7 @@ margin_right = 84.0
 margin_bottom = 40.0
 focus_neighbour_top = NodePath("../Button")
 focus_neighbour_bottom = NodePath("../Button")
+mouse_default_cursor_shape = 2
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]

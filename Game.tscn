@@ -9,6 +9,8 @@
 [ext_resource path="res://Background/PointsLabel.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=4]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 6 )
 
 [sub_resource type="CapsuleShape2D" id=3]
