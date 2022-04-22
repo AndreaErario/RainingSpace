@@ -3,6 +3,29 @@ extends KinematicBody2D
 const explosion_particle = preload("res://Meteor/MeteorExplosion.tscn")
 
 var types = [0, 1, 2, 3]
+var polygons = [
+	PoolVector2Array(
+		[Vector2(-33, -40), Vector2(23, -40), 
+		Vector2(49, -1), Vector2(34, 32), 
+		Vector2(10, 29), Vector2(-21, 40), Vector2(-49, 10)]
+	), 
+	PoolVector2Array(
+		[Vector2(7, -48), Vector2(59, -29), 
+		Vector2(45, 18), Vector2(-8, 32), 
+		Vector2(-26, 48), Vector2(-53, 26), 
+		Vector2(-59, -6), Vector2(-39, -40)]
+	), 
+	PoolVector2Array(
+		[Vector2(-10, -39), Vector2(28, -27), 
+		Vector2(43, 0), Vector2(20, 40), 
+		Vector2(-27, 32), Vector2(-41, 14), Vector2(-43, -18)]
+	), 
+	PoolVector2Array(
+		[Vector2(16, -45), Vector2(47, -12), 
+		Vector2(29, 41), Vector2(-19, 45), 
+		Vector2(-47, 10), Vector2(-34, -32)]
+	)
+]
 var spawn_position
 var move_to
 
@@ -11,9 +34,8 @@ func _ready():
 	# Select a random type and set the collision shape
 	randomize()
 	var type = randi() % types.size()
-	$CollisionShape2D/AnimatedSprite.frame = type
-	$CollisionShape2D.shape = $CollisionShape2D.shape.duplicate()
-	$CollisionShape2D.shape.extents = $CollisionShape2D/AnimatedSprite.frames.get_frame("default", type).get_size()/2
+	$CollisionPolygon2D/AnimatedSprite.frame = type
+	$CollisionPolygon2D.set_polygon(polygons[type])
 
 
 func _physics_process(delta):
