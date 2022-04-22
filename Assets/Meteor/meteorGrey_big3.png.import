@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/meteorGrey_small2.png-0e84bb674c39314989f47f7d56f4b785.stex"
+path="res://.import/meteorGrey_big3.png-f3e68bdf8bee3ee13a9bf103fa0b20ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Meteor/imgs/meteorGrey_small2.png"
-dest_files=[ "res://.import/meteorGrey_small2.png-0e84bb674c39314989f47f7d56f4b785.stex" ]
+source_file="res://Assets/Meteor/meteorGrey_big3.png"
+dest_files=[ "res://.import/meteorGrey_big3.png-f3e68bdf8bee3ee13a9bf103fa0b20ad.stex" ]
 
 [params]
 

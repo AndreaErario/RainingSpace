@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/laserRed07.png-382e0424b3a527cf0eca73b140dfbf24.stex"
+path="res://.import/meteorGrey_big1.png-710064b71968edc2837158f8ff4bdd13.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Laser/laserRed07.png"
-dest_files=[ "res://.import/laserRed07.png-382e0424b3a527cf0eca73b140dfbf24.stex" ]
+source_file="res://Assets/Meteor/meteorGrey_big1.png"
+dest_files=[ "res://.import/meteorGrey_big1.png-710064b71968edc2837158f8ff4bdd13.stex" ]
 
 [params]
 
