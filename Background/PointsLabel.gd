@@ -7,7 +7,7 @@ var best
 func _ready():
 	# Reads the value
 	var file = File.new()
-	file.open("res://best.txt", File.READ)
+	file.open("user://best.txt", File.READ)
 	best = file.get_line()
 	if not best:
 		best = 0
@@ -21,6 +21,6 @@ func _on_Laser_meteor_destroied():
 	if counter > int(best):
 		best = counter
 		var file = File.new()
-		file.open("res://best.txt", File.WRITE)
+		file.open("user://best.txt", File.WRITE)
 		file.store_string(str(best))
 	self.text = "Current: " + str(counter) + "\nBest: " + str(best)
