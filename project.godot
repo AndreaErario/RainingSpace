@@ -14,7 +14,7 @@ config/name="Raining Space"
 run/main_scene="res://Menus/Start/StartMenu.tscn"
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
 config/icon="res://Assets/Icons/icon.png"
-config/windows_native_icon="res://favicon.ico"
+config/windows_native_icon="res://Assets/Icons/favicon.ico"
 
 [debug]
 
